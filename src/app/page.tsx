@@ -2,27 +2,52 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import Header from "./components/Header/header";
 import Footer from "./components/Footer/footer"
+import Herosection from "./components/Hero-section/Herosection"
 
 export default function Page() {
   return (
-    <div>
+    <>
       <Header />
-      <div className={styles.herosection}>
-        <div className={styles.blob}></div>
-        <div className={styles.blob}></div>
-        <div className={styles.herotext}>
-          <h1>Ready to Headout</h1>
-          book unique Experiences through headout
-        </div>
-        <Image
-          className={styles.heroimage}
-          width={450}
-          height={400}
-          src="/Faisal-mosque.jpg "
-          alt="Hero Image"
-        ></Image>
-      </div>
-          <Footer />
-    </div>
+      <Herosection />
+      <section className={styles.placelist}>
+     <div className={styles.placeone}>
+      <div><Image
+       width={200}
+       height={240}
+       src="/Beachside-view.jpg"
+       alt="image of product one"></Image></div>
+      <button>Book Now</button>
+     </div>
+
+     <div className={styles.placeTwo}>
+     <div><Image
+       width={200}
+       height={240}
+       src="/Faisal-mosque.jpg"
+       alt="image of product one"></Image></div>
+       <button>Book Now</button>
+     </div>
+    
+
+     <div className={styles.placeThree}>
+     <div><Image
+       width={200}
+       height={240}
+       src="/Beachside.png"
+       alt="image of product one"></Image></div>
+      <button>Book Now</button>
+     </div>
+
+     <div className={styles.placeFour}>
+     <div><Image
+       width={200}
+       height={240}
+       src="/scenery.png"
+       alt="image of product one"></Image></div>
+       <button>Book Now</button>
+     </div>
+   </section>
+      <Footer />
+    </>
   );
 }
