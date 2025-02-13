@@ -13,7 +13,7 @@ function Herosection() {
       className={styles.heroimage}
       width={400}
       height={350}
-      src="/Faisal-mosque.jpg "
+      src="/Faisal-mosque.jpg"
       alt="Hero Image"
       ></Image>
   </div>
