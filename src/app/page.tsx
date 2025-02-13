@@ -14,7 +14,7 @@ export default function Page() {
       <div><Image
        width={200}
        height={240}
-       src="/Beachside-view.jpg"
+       src="/Beachside-View.jpg"
        alt="image of product one"></Image></div>
       <button>Book Now</button>
      </div>
